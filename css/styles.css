@@ -1,0 +1,242 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dce3e9;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#loginForm {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#video {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    padding: 20px;
+    background-image: url('../multimedia/fondo_video.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.video-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#video video {
+    max-width: 100%;
+    width: 80%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    margin: 0 auto; 
+}
+
+/* Admin */
+.admin-container {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.admin-container h2 {
+    margin-bottom: 20px;
+}
+
+.admin-container form {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Album */
+.album-section {
+    padding: 20px 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.flex-item {
+    flex: 1 1 calc(33.333% - 30px);
+    box-sizing: border-box;
+}
+
+.flex-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.flex-item img:hover {
+    transform: scale(1.05);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    display: none;
+    width: 60px; 
+    height: 60px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px; 
+    line-height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 1000; 
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 576px) {
+    .flex-item {
+        flex: 1 1 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    #video video {
+        max-width: 80%; 
+    }
+    .card-img-top {
+        height: 150px;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+}

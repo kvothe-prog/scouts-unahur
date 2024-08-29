@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Scout UNAHUR</title>
+    <link rel="icon" href="multimedia/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="multimedia/logo.png" alt="Logo Scouts">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <div class="row">
+            <section class="col-lg-4 mb-4">
+                <h1 class="text-center">Iniciar sesión</h1>
+                <form id="loginForm" class="mx-auto my-4">
+                    <div class="mb-3">
+                        <input type="text" id="username" class="form-control" placeholder="Nombre de usuario" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" id="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="Iniciar sesión">
+                    </div>
+                </form>
+            </section>
+
+            <section id="gallery" class="col-lg-8">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="multimedia/imagen_1.jpg" class="d-block w-100" alt="Bandera de argentina junto a bandera Scout">
+                            <div class="carousel-caption d-md-block">
+                                <h5>QUIERO SER SCOUT</h5>
+                                <p>Formá parte de un Movimiento Mundial de jóvenes, niños y adultos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagen_2.jpg" class="d-block w-100" alt="Imagen de niña Scout">
+                            <div class="carousel-caption d-md-block">
+                                <h5>MISIÓN DEL MOVIMIENTO SCOUT</h5>
+                                <p>Construir un mundo mejor donde las personas se desarrollen plenamente y jueguen un papel constructivo en la sociedad.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagen_3.jpg" class="d-block w-100" alt="Imagen centro de gestión comunitaria">
+                            <div class="carousel-caption d-md-block">
+                                <h5>CENTROS DE GESTIÓN COMUNITARIA</h5>
+                                <p>Promovemos el involucramiento de las personas con su realidad.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagen_4.jpg" class="d-block w-100" alt="Imagen de campamento">
+                            <div class="carousel-caption d-md-block">
+                                <h5>DESAFIATE</h5>
+                                <p>Siendo scout podés vivir tus días de manera diferente, hacer amigos, divertirte, jugar y aprender.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section id="video" class="text-center my-5">
+            <div class="video-container row align-items-center">
+                <div class="video-content col-lg-4 order-lg-1 order-2">
+                    <h2>Ser Scout</h2>
+                    <p>Ser scouts es sinónimo de servicio, compromiso, superación, valores y una forma de vida en contacto con la naturaleza. Personas que no se rinden ante las adversidades afrontándolas siempre con una sonrisa.</p>
+                </div>
+                <div class="col-lg-8 order-lg-2 order-1">
+                    <video controls class="img-fluid" poster="multimedia/video-preview.jpg">
+                        <source src="multimedia/presentacion_scouts.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa" class="container my-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Ubicación</h2>
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.7599889801863!2d-58.63671361738394!3d-34.61629789742474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8da75c7af63%3A0x275fa0fbb4f66f49!2sUniversidad%20Nacional%20de%20Hurlingham!5e0!3m2!1ses!2sar!4v1719539178248!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <li><strong>Whatsapp:</strong> +54 11 8888-8888</li>
+                        <li><strong>Email:</strong> contacto@scoutsunahur.com</li>
+                        <li><strong>Dirección:</strong> Av. Gdor. Vergara 2222, Villa Tesei, Provincia de Buenos Aires</li>
+                    </ul>
+                    <h4>Seguinos en redes sociales</h4>
+                    <div class="social-links mt-4">
+                        <a href="https://www.facebook.com" target="_blank" class="me-3"><img width="60" src="multimedia/facebook.png" alt="Link Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank" class="me-3"><img width="60" src="multimedia/instagram.png" alt="Link Instagram"></a>
+                        <a href="https://www.youtube.com" target="_blank"><img width="60" src="multimedia/youtube.png" alt="Link Youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto" class="bg-light text-center py-3">
+        <p>Grupo Scout Unahur 2024 | Desarrollado por Ferrara Facundo León</p>
+    </footer>
+
+</body>
+</html>
